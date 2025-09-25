@@ -43,11 +43,83 @@
 
   
   <div class="footer">
-    <p> made with ❤️ by me (a beginner)</p>
+    <p> made with ❤️ by me and passionate with blockchain , innovate more with blockchain </p>
   </div>
 
   
   <script src="script.js"></script>
 </body>
 </html>
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  background: linear-gradient(to right, #FFFFFF, #FFFAE5); 
+  color: #000; 
+}
+
+
+.header {
+  padding: 25px;
+  background: #000000; 
+  color: #FFB800; 
+}
+
+.header h1 {
+  font-size: 30px;
+  margin: 5px;
+}
+
+
+.main {
+  padding: 20px;
+}
+
+.main img {
+  border: 4px solid #FFB800; 
+  border-radius: 12px;
+  margin: 15px;
+  max-width: 80%;
+}
+
+button {
+  background: #FFB800; 
+  color: #000; 
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e6a200; 
+}
+
+
+.main a {
+  color: #FFB800; 
+  text-decoration: none;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}
+
+
+.footer {
+  background: #000000; 
+  padding: 15px;
+  color: #FFB800; 
+  margin-top: 40px;
+}
+
+
+@media (max-width:600px) {
+  .header h1 {
+    font-size: 22px;
+  }
+  .main img {
+    width: 100%;
+  }
+}
 
