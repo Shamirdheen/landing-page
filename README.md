@@ -50,3 +50,12 @@
   <script src="backend.js"></script>
 </body>
 </html>
+
+
+🚀 Notes
+
+I didn’t connect any database (still learning).
+
+This is just for practice, not a real login system.
+
+Hope you like my effort 🙏
