@@ -1,0 +1,25 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.static("public"));
+
+app.post("/login", (req, res) => {
+  const { username, password } = req.body;
+
+
+  console.log("User tried to login:", username, password);
+
+  if (username === "admin" && password === "BLOCKCHAIN") {
+    res.send("✅ Login Successful! Welcome " + username);
+  } else {
+    res.send("❌ Wrong username or password. Try again.");
+  }
+});
+
+app.listen(port, () => {
+  console.log(`server running at http://localhost:${port}`);
+});
